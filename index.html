@@ -10,6 +10,10 @@
       background: #2c3e50;
       
       }
+      a {
+        padding: 15%;
+        color: #fff;
+      }
       body, div, form, input, textarea, p { 
       padding: 0;
       margin: 0;
@@ -43,7 +47,8 @@
       .banner {
       position: relative;
       height: 210px;
-      background-image: url("graph.png");      background-size: cover;
+      background-image: url("graph.png");      
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -94,7 +99,7 @@
       font-size: 16px;
       color: #fff;
       cursor: pointer;
-      }
+      }id 
       button:hover {
       background: #2980b9;
       }
@@ -118,7 +123,7 @@
   </head>
   <body>
     <div class="testbox">
-      <form action="https://api-solintvis.azurewebsites.net/" method="POST">
+      <form action="https://api-solintvis.azurewebsites.net/api/SubmitPost" method="POST">
         <div class="banner">
           <h1>Solution Interop Visualization</h1>
         </div>
@@ -134,7 +139,6 @@
             <input type="text" name="receiver" placeholder="Receiver" />
           </div>
         </div>
-        
           <p>Product Interaction</p>
           <textarea name="action" rows="3" required ></textarea>
         </div>
@@ -143,5 +147,6 @@
         </div>
       </form>
     </div>
+    <a href="Files.zip" download>Try it Yourself</a>
   </body>
 </html>
